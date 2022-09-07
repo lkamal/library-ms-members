@@ -14,6 +14,6 @@ FROM adoptopenjdk/openjdk13:alpine-jre
 
 WORKDIR /app
 
-COPY --from=BUILD /build/target/library-ms-members-1.0.0.jar /library-ms-members-1.0.0.jar
+COPY --from=BUILD /build/target/library-ms-members-1.0.1.jar /library-ms-members-1.0.1.jar
 
-CMD ["java", "-jar", "/library-ms-members-1.0.0.jar"]
+CMD ["java", "-jar", "/library-ms-members-1.0.1.jar"]
