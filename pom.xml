@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.digizol.library.ms.members</groupId>
 	<artifactId>library-ms-members</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>library-ms-members</name>
 	<description>library ms members</description>
 	<properties>
@@ -20,6 +20,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
 		<dependency>
