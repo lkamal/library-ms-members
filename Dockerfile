@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM adoptopenjdk/openjdk13 as BUILD
+FROM adoptopenjdk/openjdk11 as BUILD
 
 WORKDIR /build
 
