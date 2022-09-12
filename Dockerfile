@@ -10,7 +10,7 @@ COPY src/ ./src
 
 RUN ./mvnw clean package
 
-FROM adoptopenjdk/openjdk13:alpine-jre
+FROM adoptopenjdk/openjdk11:alpine-jre
 
 WORKDIR /app
 
