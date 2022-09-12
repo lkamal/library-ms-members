@@ -10,7 +10,9 @@ pipeline {
 
         stage('SonarQube analysis') {
             steps {
-                sh 'mvn sonar:sonar -Dsonar.host.url=http://3.230.2.128:9000 -Dsonar.login=87e3d858a81dc7c4435a44a487db6374494d0a08'
+                withCredentials([usernamePassword(credentialsId: 'sonarqube', passwordVariable: 'sonarqubeToken', usernameVariable: 'sonarqubeUrl')]) {
+                    sh 'mvn sonar:sonar -Dsonar.host.url=${sonarqubeUrl} -Dsonar.login=${sonarqubeToken}'
+                }
             }
         }
 
